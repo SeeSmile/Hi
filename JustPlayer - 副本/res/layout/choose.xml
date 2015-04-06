@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/choice"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="#CBD9E1" >
+
+        <TextView
+            android:id="@+id/tv_lrc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="目录："
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_return"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="26dp"
+            android:text="@string/shang" />
+
+        <TextView
+            android:id="@+id/tv_path"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_lrc"
+            android:layout_weight="0.11"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_choose"
+        android:layout_width="match_parent"
+        android:layout_height="318dp"
+        android:layout_weight="0.07" >
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C2D7DF" >
+
+        <Button
+            android:id="@+id/bt_chok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="38dp"
+            android:text="@string/choose" />
+
+        <Button
+            android:id="@+id/bt_quxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="33dp"
+            android:text="@string/no" />
+
+    </RelativeLayout>
+
+</LinearLayout>

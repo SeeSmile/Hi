@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/playiii"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/songname"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#009B00" />
+
+        <TextView
+            android:id="@+id/tv_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:text="@string/singer"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#00FF00" />
+
+        <ImageView
+            android:id="@+id/iv_order"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26dp"
+            android:src="@drawable/xunhuan" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <SeekBar
+            android:id="@+id/sk_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="26dp"
+            android:maxHeight="5dp"
+            android:progressDrawable="@drawable/seek_bar"
+            android:thumb="@drawable/thumb" />
+
+        <TextView
+            android:id="@+id/tv_nowtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sk_play"
+            android:text="@string/time"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_alltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_nowtime"
+            android:layout_alignBottom="@+id/tv_nowtime"
+            android:layout_alignParentRight="true"
+            android:text="@string/time"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.54" >
+
+        <TextView
+            android:id="@+id/tv_playlrc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/lrc"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#00FFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="137dp" >
+
+        <ImageView
+            android:id="@+id/im_last"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/im_next"
+            android:layout_marginRight="36dp"
+            android:layout_toLeftOf="@+id/im_start"
+            android:src="@drawable/last" />
+
+        <ImageView
+            android:id="@+id/im_start"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="21dp"
+            android:src="@drawable/pause" />
+
+        <ImageView
+            android:id="@+id/im_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@+id/im_start"
+            android:src="@drawable/next" />
+
+    </RelativeLayout>
+
+</LinearLayout>
